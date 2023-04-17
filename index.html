@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+.head{
+   
+    margin-top: -80vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    border-bottom: 2px solid red;
+}
+        .main {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(63, 240, 47);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .main .time {
+            width: 550px;
+            height: 200px;
+            background-color: rgb(143, 224, 143);
+            justify-content: space-around;
+            padding: 0.8rem;
+            align-items: center;
+            display: flex;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgb(0, 0, 0);
+            cursor: pointer;
+        }
+
+        .main .time .times {
+            width: 150px;
+            height: 55px;
+            background-color: greenyellow;
+            box-sizing: border-box;
+            font-size: 3em;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px green;
+            color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="head">
+            <h1>Times Of India</h1>
+        </div>
+        <div class="time">
+            <div id="hour" class="times"></div>
+            <div id="mint" class="times"></div>
+            <div id="second" class="times"></div>
+        </div>
+        <script src="./time.js"></script>
+</body>
+
+</html>
